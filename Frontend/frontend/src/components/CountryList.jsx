@@ -1,18 +1,19 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import COUNTRY_KEY from './../../../../.env'
 const CountryList = () => {
     const [array, setArray] = useState([]);
 
     const fetchBackend = async () => {
         try{
-        const response = await axios.get("https://date.nager.at/api/v3/AvailableCountries");
+        const response = await axios.get(COUNTRY_KEY);
         setArray(response.data);
         }
         catch(error){
             console.log(error);
         }
+        
     }
 
     useEffect(() => {

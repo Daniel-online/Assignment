@@ -18,7 +18,7 @@ const Info = () => {
                 <p>Country: {country.name}</p>
                 <p>Country Code: {country.countryCode}</p>
                 <div className="">
-                <PopulationData/>
+                <PopulationData countryCode={country.countryCode}/>
             </div>
             </div>
 
