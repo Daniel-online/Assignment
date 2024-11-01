@@ -17,7 +17,7 @@ const BorderCountries = () => {
       }
       
   }
-  
+
   useEffect(() => {
     fetchBackend();
 }, []);
@@ -29,7 +29,11 @@ const BorderCountries = () => {
         {
           array.map((country, index) => (
             <Link className='text-white hover:text-red-600' to='/info' state={{ country }} key={index}>
-              {country.name} : {country.countryCode}
+              {country.borders.map((border,index)=>{
+                <p key={index}>
+                  {border.commonName}
+                </p>
+              })}
               <br></br>
             </Link>
           ))

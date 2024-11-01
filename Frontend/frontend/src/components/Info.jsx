@@ -1,7 +1,9 @@
 import { useLocation, useNavigate } from "react-router-dom"
 import { useEffect } from "react";
-import PopulationData from "./PopulationData";
-import Charts from "./Charts";
+import BorderCountries from "./BorderCountries";
+
+// import PopulationData from "./PopulationData";
+// import Charts from "./Charts";
 
 const Info = () => {
     const navigate = useNavigate();
@@ -19,11 +21,15 @@ const Info = () => {
                 <p>Country: {country.name}</p>
                 <p>Country Code: {country.countryCode}</p>
                 <div>
+                    <BorderCountries/>
+                </div>
+
+                {/* <div>
                     <Charts location={location}></Charts>
                 </div>
                 <div className="">
                     <PopulationData countryCode={country.countryCode} />
-                </div>
+                </div> */}
             </div>
 
         </div>

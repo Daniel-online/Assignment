@@ -1,14 +1,19 @@
-// import axios from "axios"
-// import IMAGE_KEY from "./../../../../.env";
-// const Flag = () => {
+import axios from "axios"
+import IMAGE_KEY from "./../../../../.env";
+let require("dotenv").config();
 
-//     const flagIcon = axios.get(I
+const Flag = () => {
 
-//   return (
-//     <div>
+    const flagIcon = axios.get(IMAGE_KEY);
+
+  return (
+    
+
+
+    <div>
       
-//     </div>
-//   )
-// }
+    </div>
+  )
+}
 
-// export default Flag
+export default Flag
