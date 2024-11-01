@@ -1,14 +1,14 @@
-import axios from "axios"
-import IMAGE_KEY from "./../../../../.env";
-const Flag = () => {
+// import axios from "axios"
+// import IMAGE_KEY from "./../../../../.env";
+// const Flag = () => {
 
-    const flagIcon = axios.get(IMAGE_KEY);
+//     const flagIcon = axios.get(I
 
-  return (
-    <div>
+//   return (
+//     <div>
       
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default Flag
+// export default Flag
